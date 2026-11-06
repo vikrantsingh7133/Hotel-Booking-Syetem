@@ -13,12 +13,20 @@ Data is kept in an in-memory H2 database, so it is reset every time the app rest
 
 You need **Java 17+**.
 
+**Build a jar, then run it**
+
 ```bash
-./mvnw spring-boot:run
+mvn clean install -DskipTests
 ```
 
 ```bash
-./mvnw test
+java -jar target/Hotel-Booking-Syetem-0.0.1-SNAPSHOT.jar
+```
+
+**Run the tests**
+
+```bash
+mvn clean test
 ```
 
 - The app starts on `http://localhost:8081`.
